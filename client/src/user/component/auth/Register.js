@@ -87,8 +87,8 @@ const Register = (props) => {
                 <div className="card-body">
                   <form onSubmit={onSubmit}>
                     <div className="form-row">
-                      <div className="form-group col-md-12">
-                        <label for="inputName1"></label>
+                      <div className="form-group col-md-6">
+                        <label for="inputName1">FirstName</label>
                         <input
                           type="text"
                           className="form-control"
@@ -101,8 +101,8 @@ const Register = (props) => {
                         />
                       </div>
 
-                      <div className="form-group col-md-12">
-                        <label for="inputName3"></label>
+                      <div className="form-group col-md-6">
+                        <label for="inputName3">LastName</label>
                         <input
                           type="text"
                           className="form-control"
@@ -119,6 +119,20 @@ const Register = (props) => {
                         <label for="inputEmail1"></label>
                         <input
                           type="email"
+                          className="form-control"
+                          id="inputEmail1"
+                          placeholder="Email"
+                          name="email"
+                          value={email}
+                          onChange={onChange}
+                          required
+                        />
+                      </div>
+
+                      <div className="form-group col-md-12">
+                        <label for="inputEmail1"></label>
+                        <input
+                          type="text"
                           className="form-control"
                           id="inputEmail1"
                           placeholder="Email"

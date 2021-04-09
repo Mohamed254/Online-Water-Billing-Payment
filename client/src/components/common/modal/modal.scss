@@ -1,0 +1,56 @@
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: transparentize(#333, $amount: 0.5);
+    width: 100%;
+    height: 100vh;
+    z-index: 200;
+
+    &__container {
+        width: auto;
+        height: auto;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: #fff;
+        padding: 10px;
+        border-radius: 5px;
+        box-shadow: 5px 10px 20px 0px rgba(0, 0, 0, 0.09);
+        min-width: 40%;
+
+        &--header {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+
+            h3 {
+                font-size: 1.4rem;
+                font-weight: 600;
+            }
+
+            span {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                height: 40px;
+                width: 40px;
+                background: #eee;
+                border-radius: 50%;
+                transition: 0.5s ease;
+
+                &:hover {
+                    background: darken(#eee, 10%);
+                }
+            }
+        }
+        &--children {
+            padding: 20px;
+        }
+    }
+}
